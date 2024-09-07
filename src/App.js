@@ -12,7 +12,8 @@ const topics = [
   "Documentação", "Introdução ao Conceito", "Entendendo o Conceito",
   "Criando Prompts Eficazes", "Interpretando e Adaptando Respostas da IA",
   "Prompts para Diferentes Linguagens", "Melhores Práticas",
-  "Exercícios Práticos", "Desafio Avançado", "Recursos Adicionais"
+  "Exercícios Práticos", "Desafio Avançado", "Recursos Adicionais",
+  "Resumo Final"
 ];
 
 const prompts = [
@@ -37,7 +38,17 @@ Para a explicação:
 - Mantenha um equilíbrio entre o uso de IA e o desenvolvimento de habilidades fundamentais de programação
 
 Lembre-se de ensinar o conteúdo da forma mais didática possível usando Feynamn, focando sempre em como a IA pode ser usada como uma ferramenta para implementação e aprendizado.`,
-  // Prompt para o tópico 2
+  
+// Prompt para o tópico 1 (Introdução ao Conceito)
+`Forneça uma introdução ao conceito de [CONCEITO: {input}] na programação:
+
+- Apresente uma breve explicação do que é [CONCEITO: {input}]
+- Discuta a importância e as aplicações práticas de [CONCEITO: {input}] no desenvolvimento de software
+- Explique como a IA simplifica a implementação deste conceito, destacando as vantagens de usar IA para trabalhar com [CONCEITO: {input}]
+- Dê um exemplo simples de como [CONCEITO: {input}] pode ser aplicado em um projeto real`,
+
+
+// Prompt para o tópico 2
   `Explique o conceito de [CONCEITO: {input}] na programação de forma simples e didática, seguindo o método Feynman. Inclua:
 
   - Uma explicação geral do que o [CONCEITO] faz
@@ -93,12 +104,18 @@ Lembre-se de ensinar o conteúdo da forma mais didática possível usando Feynam
 
   - Liste e descreva brevemente recursos online, livros ou cursos para aprender mais sobre [CONCEITO]
   - Sugira termos de pesquisa específicos para encontrar vídeos no YouTube sobre [CONCEITO]
-  - Recomende comunidades online ou fóruns onde os alunos possam discutir e aprender mais sobre [CONCEITO]`
+  - Recomende comunidades online ou fóruns onde os alunos possam discutir e aprender mais sobre [CONCEITO]`,
+
+  // Prompt para o tópico 10
+  (previousResponses) => `Crie um resumo completo a partir dos arquivos md das aulas e explique de uma forma bem fácil de entender usando feynman, me de essa explicação bem formatada em markdown: 
+
+${previousResponses.join('\n\n')}`
 ];
 
 function App() {
-  const [responses, setResponses] = useState(Array(10).fill(''));
-  const [loading, setLoading] = useState(Array(10).fill(false));
+  // Ajuste o tamanho inicial dos arrays para 11 elementos
+  const [responses, setResponses] = useState(Array(11).fill(''));
+  const [loading, setLoading] = useState(Array(11).fill(false));
 
   const handleSubmit = async (input) => {
     console.log('Tópico submetido:', input);
@@ -110,7 +127,15 @@ function App() {
       setLoading([...newLoading]);
 
       try {
-        const prompt = prompts[i].replace('{input}', input);
+        let prompt;
+        if (i === prompts.length - 1) {
+          // Para o último prompt (Resumo Final), passamos todas as respostas anteriores
+          const previousResponses = newResponses.slice(0, -1);
+          prompt = prompts[i](previousResponses);
+        } else {
+          prompt = prompts[i].replace('{input}', input);
+        }
+
         const result = await model.generateContent(prompt);
         const response = await result.response;
         const text = response.text();
