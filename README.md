@@ -64,3 +64,4 @@ To-Do:
 
 - [ ] Adicionar um campo para a pessoa escolher a api key que vai usar e poder colocar a sua (escala)
 - [ ] Adicionar um campo para a pessoa poder trocar o idioma do tutor
+- [ ] Estruturar melhor os prompts para respostas melhores.
