@@ -36,7 +36,7 @@ Para a explicação:
 - Encoraje o pensamento crítico e a adaptação criativa dos prompts
 - Mantenha um equilíbrio entre o uso de IA e o desenvolvimento de habilidades fundamentais de programação
 
-Lembre-se de ensinar o conteúdo da forma mais didática possível usando Feynamn, focando sempre em como a IA pode ser usada como uma ferramenta para implementação e aprendizado.`,
+Lembre-se de ensinar o conteúdo da forma mais didática possível usando Feynamn, focando sempre em como a IA pode ser usada como uma ferramenta para implementação e aprendizado. Sempre que for demostrar um código em uma caixa de código, inclua comentários para explicar o que está acontecendo em cada linha e no contexto geral, como um tutorial.`,
   // Prompt para o tópico 2
   `Explique o conceito de [CONCEITO: {input}] na programação de forma simples e didática, seguindo o método Feynman. Inclua:
 
@@ -45,7 +45,7 @@ Lembre-se de ensinar o conteúdo da forma mais didática possível usando Feynam
   - Componentes ou etapas principais envolvidas
   - Regras e pontos de atenção importantes
 
-  Lembre-se de usar analogias e exemplos do cotidiano para tornar a explicação o mais acessível possível.`,
+  Lembre-se de usar analogias e exemplos do cotidiano para tornar a explicação o mais acessível possível. Sempre que for demostrar um código em uma caixa de código, inclua comentários para explicar o que está acontecendo em cada linha e no contexto geral, como um tutorial.`,
 
   // Prompt para o tópico 3
   `Ensine como criar prompts eficazes para implementar [CONCEITO: {input}] usando IA. Inclua:
@@ -53,47 +53,54 @@ Lembre-se de ensinar o conteúdo da forma mais didática possível usando Feynam
   - Como estruturar um prompt para implementar o [CONCEITO]
   - Palavras-chave e termos importantes a incluir no prompt
   - 1 exemplo de prompt para cada caso de aplicação do [CONCEITO]
-  - 5 exemplos de prompts para diferentes aspectos ou variações do conceito`,
+  - 5 exemplos de prompts para diferentes aspectos ou variações do conceito
+   Sempre que for demostrar um código em uma caixa de código, inclua comentários para explicar o que está acontecendo em cada linha e no contexto geral, como um tutorial.`,
 
   // Prompt para o tópico 4
   `Explique como interpretar e adaptar respostas da IA ao implementar [CONCEITO: {input}]. Aborde:
 
   - Como analisar o código gerado pela IA para [CONCEITO]
   - Dicas específicas para ajustar ou refinar o prompt com base na resposta recebida ao aplicar os prompts para [CONCEITO]
-  - Identificação de possíveis problemas ou limitações nas respostas da IA específicos para [CONCEITO]`,
+  - Identificação de possíveis problemas ou limitações nas respostas da IA específicos para [CONCEITO]
+   Sempre que for demostrar um código em uma caixa de código, inclua comentários para explicar o que está acontecendo em cada linha e no contexto geral, como um tutorial.`,
 
   // Prompt para o tópico 5
   `Demonstre como adaptar prompts para implementar [CONCEITO: {input}] em diferentes linguagens de programação. Inclua:
 
   - Orientações gerais para adaptar prompts para várias linguagens
-  - Um exemplo de prompt para implementar [CONCEITO] adaptado para 3 linguagens diferentes`,
+  - Um exemplo de prompt para implementar [CONCEITO] adaptado para 3 linguagens diferentes
+   Sempre que for demostrar um código em uma caixa de código, inclua comentários para explicar o que está acontecendo em cada linha e no contexto geral, como um tutorial.`,
 
   // Prompt para o tópico 6
   `Compartilhe as melhores práticas para usar IA na implementação de [CONCEITO: {input}]. Inclua:
 
   - Dicas para criar prompts claros e eficazes (com 1 exemplo específico para [CONCEITO])
   - Como lidar com aspectos complexos ou multifacetados de [CONCEITO] (com 1 exemplo específico)
-  - Estratégias para verificar e testar o código gerado para [CONCEITO] (com 1 exemplo específico)`,
+  - Estratégias para verificar e testar o código gerado para [CONCEITO] (com 1 exemplo específico)
+   Sempre que for demostrar um código em uma caixa de código, inclua comentários para explicar o que está acontecendo em cada linha e no contexto geral, como um tutorial.`,
 
   // Prompt para o tópico 7
   `Crie 3 exercícios práticos para implementar [CONCEITO: {input}] usando IA. Para cada exercício:
 
   - Descreva um cenário ou problema relacionado a [CONCEITO]
   - Forneça sugestões de prompts para resolver o exercício
-  - Discuta possíveis variações do prompt e seus impactos`,
+  - Discuta possíveis variações do prompt e seus impactos
+   Sempre que for demostrar um código em uma caixa de código, inclua comentários para explicar o que está acontecendo em cada linha e no contexto geral, como um tutorial.`,
 
   // Prompt para o tópico 8
   `Apresente um desafio avançado para implementar [CONCEITO: {input}] usando IA. Inclua:
 
   - Um problema complexo relacionado a [CONCEITO] que requer múltiplos prompts ou iterações
-  - Uma solução passo a passo detalhada, incluindo todos os prompts necessários, lógica e explicações para concluir o desafio`,
+  - Uma solução passo a passo detalhada, incluindo todos os prompts necessários, lógica e explicações para concluir o desafio
+   Sempre que for demostrar um código em uma caixa de código, inclua comentários para explicar o que está acontecendo em cada linha e no contexto geral, como um tutorial.`,
 
   // Prompt para o tópico 9
   `Forneça recursos adicionais para aprofundar o conhecimento sobre [CONCEITO: {input}]:
 
   - Liste e descreva brevemente recursos online, livros ou cursos para aprender mais sobre [CONCEITO]
   - Sugira termos de pesquisa específicos para encontrar vídeos no YouTube sobre [CONCEITO]
-  - Recomende comunidades online ou fóruns onde os alunos possam discutir e aprender mais sobre [CONCEITO]`
+  - Recomende comunidades online ou fóruns onde os alunos possam discutir e aprender mais sobre [CONCEITO]
+   Sempre que for demostrar um código em uma caixa de código, inclua comentários para explicar o que está acontecendo em cada linha e no contexto geral, como um tutorial.`
 ];
 
 function App() {
