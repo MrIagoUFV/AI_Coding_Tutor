@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ia_coding_tutor/static/css/main.61ebb5e4.css",
-    "main.js": "/ia_coding_tutor/static/js/main.889fa79a.js",
+    "main.js": "/ia_coding_tutor/static/js/main.62826898.js",
     "static/js/453.5565870f.chunk.js": "/ia_coding_tutor/static/js/453.5565870f.chunk.js",
     "index.html": "/ia_coding_tutor/index.html",
     "main.61ebb5e4.css.map": "/ia_coding_tutor/static/css/main.61ebb5e4.css.map",
-    "main.889fa79a.js.map": "/ia_coding_tutor/static/js/main.889fa79a.js.map",
+    "main.62826898.js.map": "/ia_coding_tutor/static/js/main.62826898.js.map",
     "453.5565870f.chunk.js.map": "/ia_coding_tutor/static/js/453.5565870f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.61ebb5e4.css",
-    "static/js/main.889fa79a.js"
+    "static/js/main.62826898.js"
   ]
 }
