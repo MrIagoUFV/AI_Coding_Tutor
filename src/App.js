@@ -115,7 +115,6 @@ function App() {
         const response = await result.response;
         const text = response.text();
         newResponses[i] = text;
-        setResponses([...newResponses]);
       } catch (error) {
         console.error(`Erro ao gerar conteúdo para o tópico ${i}:`, error);
         newResponses[i] = `Erro ao gerar conteúdo para o tópico ${topics[i]}. Por favor, tente novamente.`;
@@ -123,6 +122,7 @@ function App() {
 
       newLoading[i] = false;
       setLoading([...newLoading]);
+      setResponses([...newResponses]);
     }
   };
 
