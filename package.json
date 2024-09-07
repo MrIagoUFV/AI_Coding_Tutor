@@ -2,7 +2,7 @@
   "name": "app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mriago.me",
+  "homepage": "https://mriago.me/ia_coding_tutor/",
   "dependencies": {
     "@google/generative-ai": "^0.17.1",
     "@testing-library/jest-dom": "^5.17.0",
