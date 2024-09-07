@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# AI Coding Tutor
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+AI Coding Tutor é uma aplicação web interativa que utiliza inteligência artificial para ensinar conceitos de programação. Ela oferece uma experiência de aprendizado personalizada, gerando conteúdo didático com base nos tópicos inseridos pelo usuário.
 
-## Available Scripts
+## Características
 
-In the project directory, you can run:
+- Interface com tema escuro inspirado em Matrix
+- Integração com a API Gemini da Google para geração de conteúdo
+- Entrada de texto interativa com efeito visual de Matrix
+- 10 seções expansíveis de conteúdo, cobrindo diversos aspectos do tópico escolhido
 
-### `npm start`
+## Tecnologias Utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React.js
+- @google/generative-ai (API Gemini)
+- CSS para estilização
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Instalação
 
-### `npm test`
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/MrIagoUFV/ai-coding-tutor.git
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Entre no diretório do projeto:
+   ```bash
+   cd ai-coding-tutor
+   ```
 
-### `npm run build`
+3. Instale as dependências:
+   ```bash
+   npm install
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. Inicie a aplicação:
+   ```bash
+   npm start
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Uso
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Digite um tópico de programação na caixa de entrada.
+2. Clique em "Aprender" ou pressione Enter.
+3. A aplicação gerará conteúdo para 10 seções diferentes relacionadas ao tópico.
+4. Clique em cada seção para expandir e ver o conteúdo gerado.
 
-### `npm run eject`
+## Estrutura do Projeto
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- `src/App.js`: Componente principal da aplicação
+- `src/Components/InputBox.js`: Componente de entrada de texto
+- `src/Components/ResponseSection.js`: Componente para exibição das respostas da IA
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Contribuição
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Contribuições são bem-vindas! Por favor, leia o arquivo CONTRIBUTING.md para detalhes sobre nosso código de conduta e o processo para enviar pull requests.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Licença
 
-## Learn More
+Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para detalhes.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To-Do:
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [ ] Adicionar um campo para a pessoa escolher a api key que vai usar e poder colocar a sua (escala)
+- [ ] Adicionar um campo para a pessoa poder trocar o idioma do tutor
