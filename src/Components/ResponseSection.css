@@ -1,18 +1,20 @@
 .response-section {
     margin-top: 20px;
+    padding: 0 20px;
   }
   
   .response-item {
-    background-color: #1e1e1e;
-    border: 1px solid #30363d;
+    background-color: #2d2d2d;
+    border: 1px solid #444;
     margin-bottom: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
   .response-item h3 {
-    background-color: #238636;
-    color: #ffffff;
+    background-color: #bb86fc;
+    color: #1e1e1e;
     padding: 10px;
     margin: 0;
     cursor: pointer;
@@ -20,5 +22,10 @@
   
   .response-content {
     padding: 15px;
-    color: #c9d1d9;
+    color: #e0e0e0;
+  }
+  
+  .loading-indicator {
+    font-style: italic;
+    color: #03dac6;
   }
